@@ -1,0 +1,9 @@
+file-icons
+japanese-menu
+language-praat
+language-r
+language-tex
+markdown-mindmap
+platformio-ide-terminal
+tablr
+# ls ~/.atom/packages/ | cat > atom_packages.txt

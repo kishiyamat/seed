@@ -1,0 +1,15 @@
+/trash
+**/confidential
+/notes
+**.zip
+/tmp
+
+**/lmer graphs.R
+
+.*
+!/.gitattributes
+!/.gitignore
+refs/confidential/arai2017_Locked up in a garden path: A challenge for probability-based accounts.pdf
+refs/confidential/arai2017_Locked up in a garden path: A challenge for probability-based accounts.pdf
+result/main/csv/~$output4gra4n1.xlsx
+refs/confidential/arai2017_Locked up in a garden path: A challenge for probability-based accounts.pdf

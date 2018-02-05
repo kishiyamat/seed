@@ -1,0 +1,81 @@
+% openany を加えると、章が右始まりじゃなくなるよ。
+% 章を右始まりにしたので空白ページがございますが。消せます。（じゃあ消せよ）
+% \documentclass[dvipdfmx,a4paper,openany]{book}
+\documentclass[dvipdfmx,12pt,a4paper,openany]{book}
+% パッケージとマクロの定義
+
+% 章ごとに脚注をリセットしない
+\usepackage{remreset}
+\makeatletter\@removefromreset{footnote}{chapter}\makeatother
+
+% 添削様にダブルスペースと行番号
+\usepackage{setspace}
+\doublespacing
+% \usepackage[right]{lineno}
+% \pagewiselinenumbers
+% \linenumbers
+% \modulolinenumbers[4]
+
+% 複数の木を横に
+\usepackage{multicol}
+
+% テーブルのため
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{lingmacros,theapa}
+\citepunct{(}{\&}{and}{ }{; }{: }{)}{}{.}
+\usepackage{graphicx}
+\usepackage[linguistics]{forest}
+\useforestlibrary{linguistics}
+\forestapplylibrarydefaults{linguistics}
+% \forestset{sn edges/.style={
+% for tree={
+% s sep=10mm, inner sep=0, l=0,
+% parent anchor=south, child anchor=north,
+% calign=fixed edge angles,
+% calign primary angle=-65, calign secondary angle=65,
+% align=center, base=t},
+% delay={
+% where content={}{shape=coordinate,
+% for parent={for children={anchor=north}}}{}}
+% }}
+
+% グロスマクロ
+\newcommand{\gl}[2]{%
+\leavevmode\vtop{\hbox{#1}%
+\hbox{#2\lower1.4ex\rlap{}}}}
+
+
+\begin{document}
+
+\title{Structural Predictions by Agreement Errors\\
+(Draft ver 3.1)}
+\author{Takeshi KISHIYAMA}
+\maketitle
+\bibliographystyle{theapa}
+\frontmatter
+% \begin{abstract}
+\chapter{Abstract}
+\input{../chapters/abstract.tex}
+\chapter{Acknowledgments}
+\input{../chapters/acknowledgements.tex}
+% \end{abstract}
+\tableofcontents
+
+\mainmatter
+\chapter{Introduction}
+\input{../chapters/introduction.tex}
+\chapter{Experiment}
+\input{../chapters/experiment.tex}
+\chapter{Discussion}
+\input{../chapters/discussion.tex}
+\chapter{Conclusion}
+\input{../chapters/conclusion.tex}
+\bibliographystyle{plain}
+\bibliography{ref}
+
+\backmatter
+\chapter{Appendix}
+\input{../chapters/appendix.tex}
+
+\end{document}
