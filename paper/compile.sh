@@ -1,4 +1,4 @@
-# cd ./draft/
+# cd ./paper/
 cd chapters
 
 # 各ファイルに行うしょりの図の大きさの修正
@@ -29,19 +29,3 @@ platex thesis.tex
 platex thesis.tex
 dvipdfmx thesis.dvi
 cd ../
-
-# pandoc --bibliography=ref.bib --filter pandoc-citeproc --variable  abstract.md -o abstract2.tex
-
-# pandoc abstract.md -o abstract.tex
-# sed -i 's/includegraphics/includegraphics[width=1.0\\columnwidth]/g' abstract.tex
-# pandoc introduction.md -o introduction.tex
-# sed -i 's/includegraphics/includegraphics[width=1.0\\columnwidth]/g' introduction.tex
-# pandoc experiment.md -o experiment.tex
-# sed -i 's/includegraphics/includegraphics[width=1.0\\columnwidth]/g' experiment.tex
-# pandoc conclusion.md -o conclusion.tex
-# sed -i 's/includegraphics/includegraphics[width=1.0\\columnwidth]/g' conclusion.tex
-# pandoc discussion.md -o discussion.tex
-# sed -i 's/includegraphics/includegraphics[width=1.0\\columnwidth]/g' discussion.tex
-# cd ../
-
-# おそらく、cutでコピペした時にエンコーディングが変になってた？
