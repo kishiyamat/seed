@@ -1,0 +1,3 @@
+[submodule "paper/latex/bib"]
+	path = paper/latex/bib
+	url = https://gist.github.com/0f615ecb4ec47c9cfdec60c62c22b5f1.git
