@@ -23,3 +23,11 @@ ln -sf ../latex/tex/* .
 ```
 
 という感じです。
+
+
+# 各ディレクトリの説明
+
+## bib
+
+こちらは gist で管理しています。
+[kisiyama/ref.bib](https://gist.github.com/kisiyama/0f615ecb4ec47c9cfdec60c62c22b5f1)
