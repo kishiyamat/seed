@@ -1,5 +1,5 @@
 # cd ./paper/
-cd chapters
+cd md
 
 # 各ファイルに行うしょりの図の大きさの修正
 ls | grep '.md' | cat | while read md
