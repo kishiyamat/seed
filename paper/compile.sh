@@ -22,10 +22,10 @@ do
 done
 cd ../
 cd main
-platex thesis.tex
-platex thesis.tex
-pbibtex thesis
-platex thesis.tex
-platex thesis.tex
-dvipdfmx thesis.dvi
+platex report.tex
+platex report.tex
+pbibtex report
+platex report.tex
+platex report.tex
+dvipdfmx report.dvi
 cd ../
