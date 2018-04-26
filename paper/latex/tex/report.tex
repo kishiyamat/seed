@@ -1,7 +1,9 @@
 % openany を加えると、章が右始まりじゃなくなるよ。
 % 章を右始まりにしたので空白ページがございますが。消せます。（じゃあ消せよ）
 % \documentclass[dvipdfmx,a4paper,openany]{book}
-\documentclass[dvipdfmx,12pt,a4paper,openany]{book}
+% \documentclass[dvipdfmx,12pt,a4paper,openany]{book}
+\documentclass[dvipdfmx,11pt,a4paper]{jsarticle}
+%
 % パッケージとマクロの定義
 
 % 章ごとに脚注をリセットしない
@@ -9,8 +11,8 @@
 \makeatletter\@removefromreset{footnote}{chapter}\makeatother
 
 % 添削様にダブルスペースと行番号
-\usepackage{setspace}
-\doublespacing
+% \usepackage{setspace}
+% \doublespacing
 % \usepackage[right]{lineno}
 % \pagewiselinenumbers
 % \linenumbers
@@ -28,53 +30,21 @@
 \usepackage[linguistics]{forest}
 \useforestlibrary{linguistics}
 \forestapplylibrarydefaults{linguistics}
-% \forestset{sn edges/.style={
-% for tree={
-% s sep=10mm, inner sep=0, l=0,
-% parent anchor=south, child anchor=north,
-% calign=fixed edge angles,
-% calign primary angle=-65, calign secondary angle=65,
-% align=center, base=t},
-% delay={
-% where content={}{shape=coordinate,
-% for parent={for children={anchor=north}}}{}}
-% }}
 
 % グロスマクロ
 \newcommand{\gl}[2]{%
 \leavevmode\vtop{\hbox{#1}%
 \hbox{#2\lower1.4ex\rlap{}}}}
 
+
+\title{Automaton}
+\author{岸山健}
+\date{\today}
+
 \begin{document}
-
-\title{Sample\\
-(Draft ver 0.0)}
-\author{Author}
 \maketitle
-\bibliographystyle{theapa}
-\frontmatter
-% \begin{abstract}
-\chapter{Abstract}
-\input{../md/abstract.tex}
-\chapter{Acknowledgments}
-\input{../md/acknowledgements.tex}
-% \end{abstract}
-\tableofcontents
-
-\mainmatter
-\chapter{Introduction}
-\input{../md/introduction.tex}
-\chapter{Experiment}
-\input{../md/experiment.tex}
-\chapter{Discussion}
-\input{../md/discussion.tex}
-\chapter{Conclusion}
-\input{../md/conclusion.tex}
-\bibliographystyle{plain}
-\bibliography{ref}
-
-\backmatter
-\chapter{Appendix}
-\input{../md/appendix.tex}
+%
+\section{問一}
+\input{../md/180423.tex}
 
 \end{document}
