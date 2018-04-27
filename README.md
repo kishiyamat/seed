@@ -27,6 +27,8 @@ thesis.tex と compile.sh をみれば察してもらえるかもしれません
 
 1. まずブランチを切ったらサブモジュールのプルとかしないと
 
+これが少し難しい印象があります。とくにrefbibの部分がsubmodule in submoduleのようになってしまいます。
+
 ```shell
 # pwd
 # seed/paper/main
