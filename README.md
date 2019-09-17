@@ -57,3 +57,4 @@ paper下のシンボリックリンク内（つまりシスターのmd）
 
 こちらは gist で管理しています。
 [kisiyama/ref.bib](https://gist.github.com/kisiyama/0f615ecb4ec47c9cfdec60c62c22b5f1)
+
